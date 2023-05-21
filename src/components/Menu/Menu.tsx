@@ -19,9 +19,9 @@ export default function Menu() {
     const linkAtual = useLocation()
     return(
         <MenuSld>
-            <LinkSld theme={linkAtual.pathname === "/react-pages-github/timemania"? Props: time} to={"/react-pages-github/timemania"}> Timemania</LinkSld>
-            <LinkSld  theme={linkAtual.pathname === "/react-pages-github/megasena"? Props: mega} to={"/react-pages-github/megasena"} > Megasena</LinkSld>
-            <LinkSld  theme={linkAtual.pathname === "/react-pages-github/quina"? Props: quina} to={"/react-pages-github/quina"} > Quina</LinkSld>
+            <LinkSld theme={linkAtual.pathname === "/timemania"? Props: time} to={"/timemania"}> Timemania</LinkSld>
+            <LinkSld  theme={linkAtual.pathname === "/megasena"? Props: mega} to={"/megasena"} > Megasena</LinkSld>
+            <LinkSld  theme={linkAtual.pathname === "/quina"? Props: quina} to={"/quina"} > Quina</LinkSld>
         </MenuSld>
     )
 }
