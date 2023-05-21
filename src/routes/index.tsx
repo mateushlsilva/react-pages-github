@@ -14,10 +14,10 @@ function Rota() {
             <HashRouter>
                 <Menu/>
                 <Routes>
-                    <Route path='/react-pages-github/quina' element={<Quina/>}/>
-                    <Route path='/react-pages-github/timemania' element={<Timemania/>}/>
-                    <Route path='/react-pages-github/megasena' element={<Megasena/>}/>
-                    <Route path='/react-pages-github/' element={<Timemania/>}/>
+                    <Route path='/quina' element={<Quina/>}/>
+                    <Route path='/timemania' element={<Timemania/>}/>
+                    <Route path='/megasena' element={<Megasena/>}/>
+                    <Route path='/' element={<Timemania/>}/>
                     <Route path='*' element={<Erro/>}/>
                 </Routes>
             </HashRouter>
