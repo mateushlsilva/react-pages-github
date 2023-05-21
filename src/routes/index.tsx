@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Quina from '../pages/Quina';
 import Timemania from '../pages/Timemania';
 import Megasena from '../pages/Megasena';
@@ -11,7 +11,7 @@ import { Erro } from '../components/Carregando/carregando';
 function Rota() {
     return (
         <>
-            <HashRouter>
+            <BrowserRouter>
                 <Menu/>
                 <Routes>
                     <Route path='/quina' element={<Quina/>}/>
@@ -20,7 +20,7 @@ function Rota() {
                     <Route path='/' element={<Timemania/>}/>
                     <Route path='*' element={<Erro/>}/>
                 </Routes>
-            </HashRouter>
+            </BrowserRouter>
         </>
     )
 }
